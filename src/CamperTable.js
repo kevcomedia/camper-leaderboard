@@ -19,7 +19,7 @@ class CamperTable extends Component {
           </tr>
         </thead>
         <tbody>
-          {this.props.camperList.map((camper, i) => <CamperRow camper={camper} rank={i + 1} />)}
+          {this.props.camperList.map((camper, i) => <CamperRow camper={camper} rank={i + 1} key={i} />)}
         </tbody>
       </table>
     );
