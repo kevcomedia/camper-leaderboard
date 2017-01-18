@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CamperRow from './CamperRow';
 
 class CamperTable extends Component {
   render() {
@@ -13,7 +14,7 @@ class CamperTable extends Component {
           </tr>
         </thead>
         <tbody>
-          {/* Rows will go here */}
+          {this.props.camperList.map((camper, i) => <CamperRow camper={camper} rank={i + 1} />)}
         </tbody>
       </table>
     );
