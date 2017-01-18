@@ -11,10 +11,10 @@ class CamperTable extends Component {
             <th scope='col'>Rank</th>
             <th scope='col'>Camper</th>
             <th scope='col'>
-              <ClickableHeader text={'Points in last 30 days'} />
+              <ClickableHeader text={'Points in last 30 days'} route={'recent'} populateTable={this.props.populateTable} />
             </th>
             <th scope='col'>
-              <ClickableHeader text={'All time points'} />
+              <ClickableHeader text={'All time points'} route={'alltime'} populateTable={this.props.populateTable} />
             </th>
           </tr>
         </thead>

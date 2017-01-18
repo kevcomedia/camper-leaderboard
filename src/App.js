@@ -7,14 +7,20 @@ class App extends Component {
   constructor(props) {
     super(props);
 
+    this.baseUrl = 'https://fcctop100.herokuapp.com/api/fccusers/top/';
+
     this.state = {
       camperList: []
     };
   }
 
-  componentDidMount() {
-    getJSON('https://fcctop100.herokuapp.com/api/fccusers/top/recent')
+  populateTable(route) {
+    getJSON(`${this.baseUrl}${route}`)
       .done(json => this.setState({camperList: json}));
+  }
+
+  componentDidMount() {
+    this.populateTable('recent');
   }
 
   render() {
@@ -24,7 +30,9 @@ class App extends Component {
           <h1>freeCodeCamp Camper Leaderboard</h1>
         </header>
 
-        <CamperTable camperList={this.state.camperList} />
+        <CamperTable
+          camperList={this.state.camperList}
+          populateTable={this.populateTable.bind(this)} />
       </div>
     );
   }
