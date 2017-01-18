@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import CamperRow from './CamperRow';
+import ClickableHeader from './ClickableHeader';
 
 class CamperTable extends Component {
   render() {
@@ -9,8 +10,12 @@ class CamperTable extends Component {
           <tr>
             <th scope='col'>Rank</th>
             <th scope='col'>Camper</th>
-            <th scope='col'>Points in last 30 days</th>
-            <th scope='col'>All time points</th>
+            <th scope='col'>
+              <ClickableHeader text={'Points in last 30 days'} />
+            </th>
+            <th scope='col'>
+              <ClickableHeader text={'All time points'} />
+            </th>
           </tr>
         </thead>
         <tbody>
