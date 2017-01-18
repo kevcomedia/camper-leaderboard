@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import CamperTable from './CamperTable';
 // import './App.css';
 
 class App extends Component {
@@ -9,7 +10,7 @@ class App extends Component {
           <h1>freeCodeCamp Camper Leaderboard</h1>
         </header>
 
-        {/* Table component goes here */}
+        <CamperTable />
       </div>
     );
   }
