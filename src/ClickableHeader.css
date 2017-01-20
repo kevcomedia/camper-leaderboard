@@ -1,0 +1,14 @@
+.ClickableHeader {
+  background: inherit;
+  border: 0;
+  cursor: pointer;
+  display: block;
+  font-weight: inherit;
+  height: 40px;
+  text-decoration: underline;
+  width: 100%;
+}
+
+.ClickableHeader:hover {
+  background: #f0f0f0;
+}
