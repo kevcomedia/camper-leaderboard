@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { getJSON } from 'jquery';
+
+import './CamperTable.css';
+
 import CamperRow from './CamperRow';
 import ClickableHeader from './ClickableHeader';
 
@@ -24,11 +27,11 @@ class CamperTable extends Component {
 
   render() {
     return (
-      <table>
+      <table className='CamperTable'>
         <thead>
           <tr>
-            <th scope='col'>Rank</th>
-            <th scope='col'>Camper</th>
+            <th className='CamperTable-rankHeader' scope='col'>Rank</th>
+            <th className='CamperTable-camperHeader' scope='col'>Camper</th>
             <th scope='col'>
               <ClickableHeader text={'Points in last 30 days'} route={'recent'} populateTable={this.populateTable.bind(this)} />
             </th>
