@@ -1,0 +1,35 @@
+.CamperRow td {
+  border-bottom: 1px solid lightgray;
+}
+
+.CamperRow:nth-child(odd) {
+  background: #eee;
+}
+
+.CamperRow .CamperRow-rank {
+  text-align: center;
+}
+
+.CamperRow .CamperRow-camper img {
+  border-radius: 4px;
+  box-shadow: 0 0 2px rgba(0,0,0,.3);
+  display: inline-block;
+  height: 50px;
+  margin: 3px 15px 3px 3px;
+  vertical-align: middle;
+  width: 50px;
+}
+
+.CamperRow .CamperRow-camper a {
+  color: #555;
+  text-decoration: none;
+}
+
+.CamperRow .CamperRow-camper a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+.CamperRow .CamperRow-points {
+  text-align: center;
+}

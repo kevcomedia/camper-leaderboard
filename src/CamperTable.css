@@ -1,0 +1,20 @@
+.CamperTable {
+  border-collapse: collapse;
+  margin: auto;
+  max-width: 1000px;
+  min-width: 768px;
+  table-layout: fixed;
+  width: 70%;
+}
+
+.CamperTable th {
+  border-bottom: 2px solid gray;
+}
+
+.CamperTable .CamperTable-rankHeader {
+  width: 8%;
+}
+
+.CamperTable .CamperTable-camperHeader {
+  width: 52%;
+}
