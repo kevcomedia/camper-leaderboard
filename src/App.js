@@ -7,7 +7,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1>freeCodeCamp Camper Leaderboard</h1>
+          <h1>freeCodeCamp<span className='fa fa-free-code-camp' aria-hidden='true'></span> Camper Leaderboard</h1>
         </header>
 
         <CamperTable />
